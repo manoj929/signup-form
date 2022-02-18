@@ -3,6 +3,7 @@
 :root {
     --button-background: #596D48;
     --light-border: #E5E7EB;
+    --left-space: 60px;
 }
 
 *{
@@ -29,7 +30,6 @@ body {
     background-position: center;
     /* min-height: 100vh; */
     height: 100%;
-    /* flex: 3; */
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -47,18 +47,120 @@ body {
     padding: 10px 0;
 }
 .odin-image-banner > img{
-    height: 125px;
+    height: 130px;
 }
+
+.odin-image-banner > div {
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;}
 
 .side-image-section > p {
     padding-bottom: 18px;
 }
+.side-image-section > p > a{
+    color: #fff;
 
-.text-content {
-    /* flex: 6; */
+}
+
+.content {
     width: 70%;
-    justify-content: center;
-    align-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    background-color: #f9f9f9;
+}
+
+.text-para > p {
+    font-size: 1.4rem;
+    width: 70%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: var(--left-space);
+}
+form{
+    margin-top: 25px;
+}
+.form-input-section {
+    padding: 20px var(--left-space);
+    background-color: #fff;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-input-section > p {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.form-input-section > .form-group {
+    display: flex;
+    margin-bottom: 18px;
+}
+.form-group > .form-control {
+    margin-right: 30px;
+    width: 100%;
+}
+.form-control > label{
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1px;
+}
+
+.form-control > input {
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--light-border);
+    padding: 4px 7px;
+    font-size: 1rem;
+}
+
+.form-control > .focus {
+    border: 1px solid blue;
+}
+
+.form-control > .error {
+    border: 1px solid red;
+}
+
+.error-message {
+    font-size: 0.7rem;
+    color: red;
+}
+
+button {
+    background-color: var(--button-background);
+    padding: 15px 40px;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.create-account {
+    margin-left: var(--left-space);
+    margin-top: 30px;
+}
+
+.content > p{
+    padding-left: var(--left-space);
+    margin-top: 32px;
+}
+
+.login {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.login a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--button-background);
 }
